@@ -11,8 +11,8 @@ def main(algorithm="saliencerank", data_set="inspec"):
 
 
 if __name__ == "__main__":
-    # algorithm = "tpr"  # Set this to "textrank", "tpr", "singletpr" or "saliencerank"
-    algorithm = "saliencerank"  # Set this to "textrank", "tpr", "singletpr" or "saliencerank"
+    algorithm = "tpr"  # Set this to "textrank", "tpr", "singletpr" or "saliencerank"
+    # algorithm = "saliencerank"  # Set this to "textrank", "tpr", "singletpr" or "saliencerank"
 
     data_set = "500N"
     main(algorithm, data_set)

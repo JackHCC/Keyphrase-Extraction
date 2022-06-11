@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-Code containing the implementation of the three ranking methods.
-'''
 from __future__ import division
 from utils import parse_weights_from_file, load_docsXtopics_from_file, set_graph_edges
 import numpy as np
@@ -10,15 +7,13 @@ from numpy import linalg
 from tagger import tag_phrases
 import networkx, nltk
 from nltk.tokenize import RegexpTokenizer
-from collections import Counter
 
 """TextRank algorithm : no heuristic selection of candidates on top of POS tagging. 
 	Ref: Mihalcea and Tarau. 2004. Textrank: Bringing order into texts."""
 
 
 def textrank(text):
-    # tokenize all words; remove stop words 
-    words = []
+    # tokenize all words; remove stop words
     stop_words = nltk.corpus.stopwords.words('english')
     stop_words = set(stop_words)
 
@@ -58,8 +53,7 @@ def textrank(text):
 
 
 def tpr(topics, pt, text, file_ID):
-    # tokenize all words; remove stop words 
-    words = []
+    # tokenize all words; remove stop words
     stop_words = nltk.corpus.stopwords.words('english')
     stop_words = set(stop_words)
 
@@ -135,8 +129,7 @@ def tpr(topics, pt, text, file_ID):
 
 
 def singletpr(topics, pt, text, file_ID):
-    # tokenize all words; remove stop words 
-    words = []
+    # tokenize all words; remove stop words
     stop_words = nltk.corpus.stopwords.words('english')
     stop_words = set(stop_words)
 
@@ -209,8 +202,7 @@ def singletpr(topics, pt, text, file_ID):
 
 
 def saliencerank(topics, pt, text, file_ID, alpha):
-    # tokenize all words; remove stop words 
-    words = []
+    # tokenize all words; remove stop words
     stop_words = nltk.corpus.stopwords.words('english')
     stop_words = set(stop_words)
     tokenizer = RegexpTokenizer(r'\w+')

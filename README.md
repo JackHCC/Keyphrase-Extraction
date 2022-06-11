@@ -1,8 +1,17 @@
 # Keyphrase Extraction Algorithm
 
-基于 Topic PageRank实现的关键词抽取算法（TextRank， TPR， Salience Rank， Single TPR）
+基于 Topic PageRank实现的关键词抽取算法（TextRank， TPR， Single TPR， Salience Rank）
 
 Keyphrase Extraction Algorithm based on Topic PageRank
+
+## Introduction
+
+|   Algorithm   |                            Intro                             |                             ref                              |
+| :-----------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|   TextRank    |                       Default PageRank                       |        [paper](https://aclanthology.org/W04-3252.pdf)        |
+|      TPR      | Integrating topic into PageRank calculation for the first time |        [paper](https://aclanthology.org/D10-1036.pdf)        |
+|  Single TPR   |        Topic PageRank of single iteration calculation        | [paper](https://biblio.ugent.be/publication/5974208/file/5974209.pdf) |
+| Salience Rank |    PageRank with Salience， S(w) = (1 − α)CS(w) + αTS(w)     |         [paper](https://aclanthology.org/P17-2084/)          |
 
 ## Dependencies
   - nltk 3.6.1
