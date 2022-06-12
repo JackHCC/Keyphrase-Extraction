@@ -1,8 +1,6 @@
 # Keyphrase Extraction Algorithm
 
-基于 Topic PageRank实现的关键词抽取算法（TextRank， TPR， Single TPR， Salience Rank）
-
-Keyphrase Extraction Algorithm based on Topic PageRank
+Keyphrase Extraction Algorithm based on Topic PageRank（TextRank， TPR， Single TPR， Salience Rank）
 
 ## Introduction
 
@@ -40,13 +38,6 @@ Keyphrase Extraction Algorithm based on Topic PageRank
 ```
 python runner.py 
 ```
-
-## Todo
-
-- [ ] 添加LDA
-- [ ] 增加中文关键词提取部分
-
-
 
 ## Reference
 
