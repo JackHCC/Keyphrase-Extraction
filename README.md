@@ -2,6 +2,8 @@
 
 Keyphrase Extraction Algorithm based on Topic PageRank（TextRank， TPR， Single TPR， Salience Rank）
 
+Chinese Keyphrase Extraction: [https://github.com/JackHCC/Chinese-Keyphrase-Extraction](https://github.com/JackHCC/Chinese-Keyphrase-Extraction)
+
 ## Introduction
 
 |   Algorithm   |                            Intro                             |                             ref                              |
